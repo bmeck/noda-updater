@@ -1,0 +1,33 @@
+{
+  "name": "noda-updater",
+  "version": "1.0.0",
+  "description": "noda spec for updating a resource",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "babel --source-maps --out-dir out lib",
+    "pretest": "npm run prepublish",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bmeck/noda-updater"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bmeck/noda-updater/issues"
+  },
+  "homepage": "https://github.com/bmeck/noda-updater",
+  "devDependencies": {
+    "babel": "^4.7.8"
+  },
+  "dependencies": {
+    "bluebird": "^2.9.14",
+    "concat-stream": "^1.4.7",
+    "generator-runner": "^2.2.0",
+    "hyperquest": "^1.0.1",
+    "minimatch": "^2.0.3",
+    "semver": "^4.3.1",
+    "tmp": "0.0.25"
+  }
+}
